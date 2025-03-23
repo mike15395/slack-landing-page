@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>slack-landing-page</title>
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+    <style type="text/tailwindcss">
+        @theme {
+          --color-slack: #611f69;
+          --color-hq:#0e7490;
+        }
+      </style>
+</head>
+<body class="mx-24 mt-6">
+
+    <header class="flex flex-row gap-8 items-center mb-4">
+        <img src="./assets/SLA-Slack-from-Salesforce-logo.png" alt="slack-logo" class="w-24 h-9">
+        <nav>
+            <ul class="list-style:none flex flex-row gap-4 font-bold">
+                <li>Product</li>
+                <li>Enterprise</li>
+                <li>Resources</li>
+                <li>Pricing</li>
+            </ul>
+        </nav>
+        <div class="relative">
+            <img src="./assets/search-icon.png" alt="search-icon" class="absolute top-1 right-1 w-4 h-4">
+            <input type="text" />
+        </div>
+
+        <button class="cursor-pointer">Sign in</button>
+        <button class="border-2 border-[var(--color-slack)] p-1  text-[var(--color-slack)] cursor-pointer">TALK TO SALES</button>
+        <button class="bg-[var(--color-slack)] p-1 text-white cursor-pointer ">TRY FOR FREE</button>
+    </header>
+    <main class="grid grid-cols-1 auto-rows-3 gap-6">
+        <div class="bg-[var(--color-hq)] p-6 rounded-full text-white flex flex-row justify-between">
+            <span><strong>Slack is your Digital HQ.</strong>Meet the new features keeping teams connected in a work-from-anywhere world. <strong class="underline">Let's go-></strong></span>
+             <span class="w7 h-7">&#x2715</span>
+
+        </div>
+        <article class="grid grid-cols-2 grid-rows-1 gap-12">
+            <section class="flex flex-col gap-4">
+                <span class="text-6xl font-bold">Slack is where the future works</span>
+                <p class="font-semibold">Transform the way you work with one place for everyone and everything you need to get stuff done.</p>
+                <div class="flex flex-row gap-4">
+                    <button class="bg-[var(--color-slack)] p-3 text-white rounded-lg cursor-pointer">TRY FOR FREE</button>
+                    <button class="flex flex-row items-center gap-2 bg-blue-700 p-2 rounded-lg text-white cursor-pointer"><img src="./assets/google-logo.webp" alt="google-logo" class="w-7 h-7">SIGN UP WITH GOOGLE</button>
+                </div>
+            </section>
+            <section>
+                <img src="./assets/Slack-Client-Browser.png" alt="slack-demo-client" class="w-full h-full">
+            </section>
+        </article>
+        <article class="flex flex-row justify-evenly">
+            <img src="./assets/logo-airbnb-small.png" alt="logo-airbnb-small" class="w-auto h-auto">
+            <img src="./assets/logo-etsy-small.png" alt="logo-etsy-small">
+            <img src="./assets/logo-nasa-small.png" alt="logo-nasa-small">
+            <img src="./assets/logo-nyt-small.png" alt="logo-nyt-small">
+        </article>
+        <article class="grid grid-cols-2 grid-rows-1 gap-12">
+            <section>
+                <iframe width="500" height="345" src="https://www.youtube.com/embed/tgbNymZ7vqY">
+                </iframe>
+            </section>
+            <section class="flex flex-col gap-4">
+                <div class="text-3xl font-semibold">Now is your moment to build a better tommorow</div>
+                <p >We've seen what the future can be.Now it's time to decide what it will be.</p>
+                <button class="border-2 border-[var(--color-slack)] p-2  text-[var(--color-slack)] w-40 cursor-pointer">WATCH VIDEO</button>
+            </section>
+        </article>
+    </main>
+    
+</body>
+</html>
